@@ -6,17 +6,10 @@ if (( event.metaKey || event.ctrlKey ) && event.shiftKey && event.code === 'KeyY
     }
 });
 
-function createNote(options = {}) {
-    // Function for removing previous overlay // ! REMOVE IT AFTER TESTING
-    const existingOverlay = document.querySelector( '.QNA-main-note-frame' );
-    if ( existingOverlay ) {
-        existingOverlay.remove();
-        console.log( 'QNA: Previous Overlay Removed' );
-    }
-
+function createNote( options = {} ) {
     // Main note frame
-    const overlay = document.createElement('div');
-    overlay.classList.add('QNA-main-note-frame');
+    const overlay = document.createElement( 'div' );
+    overlay.classList.add( 'QNA-main-note-frame' );
     
     overlay.style.position = 'fixed';
     overlay.style.top = '50px';
