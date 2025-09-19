@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Quick Notes Anywhere",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["js/main.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
